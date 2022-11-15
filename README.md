@@ -119,5 +119,5 @@ end)
 --  THIS IS AN FE VERSION THAT CAN BE USED IN **EVERY GAME**, BUT NOT AS STRONG AS SS
 ------------------------------------
 
-loadstring(game:HttpGet("github_link"), true)()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ButterHub/ButterHub/main/ButterHubSource.lua"), true)()
 ```
