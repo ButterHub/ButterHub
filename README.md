@@ -86,12 +86,12 @@ end
 ### **How to use the SS Code part**
 
 ```lua
--- [[
-Made by Puro,#0224 on Discord,
-Join Our Discord: https://discord.gg/xWYcdnECvw
-
-THIS WILL ALLOW YOU TO USE THE GUI IF THE MODEL ISN'T IN THE GAME BUT YOU CAN EXECUTE SERVER CODE.
-]] --
+------------------------------------
+--  Made by Puro,#0224 on Discord,
+--  Join Our Discord: https://discord.gg/xWYcdnECvw
+--  
+--  THIS WILL ALLOW YOU TO USE THE GUI IF THE MODEL ISN'T IN THE GAME BUT YOU CAN EXECUTE SERVER CODE.
+------------------------------------
 
 local Kill = Instance.new('RemoteEvent', game:GetService('JointsService'))
 Kill.Name = "%^\\Kill Event" --// It is important that "%^\\" is somewhere in the game.
@@ -112,5 +112,12 @@ end)
 ### This one works in all games, but games could patch it. All you need to do is run the github Repository.
 
 ```lua
+------------------------------------
+--  Made by Puro,#0224 on Discord,
+--  Join Our Discord: https://discord.gg/xWYcdnECvw
+--  
+--  THIS IS AN FE VERSION THAT CAN BE USED IN **EVERY GAME**, BUT NOT AS STRONG AS SS
+------------------------------------
+
 loadstring(game:HttpGet("github_link"), true)()
 ```
