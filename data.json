@@ -1,0 +1,16 @@
+{
+  "versions": {
+    "1": {
+      "name": "Filtering Enabled Edition",
+      "version": "Not Available"
+    },
+    "2": {
+      "name": "ServerSide (Require)",
+      "version": "0.0.01-BETA",
+    },
+    "3": {
+      "name": "ServerSide (Loadstring)",
+      "version": "Not Available"
+    }
+  }
+}
